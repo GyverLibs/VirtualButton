@@ -1,0 +1,32 @@
+#######################################
+# Syntax Coloring Map For VirtualButton
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+VirtualButton	KEYWORD1
+VButton	KEYWORD1
+
+VB_DEB	KEYWORD1
+VB_CLICK	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setHoldTimeout	KEYWORD2
+setStepTimeout	KEYWORD2
+poll	KEYWORD2
+busy	KEYWORD2
+press	KEYWORD2
+release	KEYWORD2
+click	KEYWORD2
+held	KEYWORD2
+hold	KEYWORD2
+step	KEYWORD2
+releaseStep	KEYWORD2
+hasClicks	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
