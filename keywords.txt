@@ -27,6 +27,7 @@ hold	KEYWORD2
 step	KEYWORD2
 releaseStep	KEYWORD2
 hasClicks	KEYWORD2
+timeout	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

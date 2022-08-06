@@ -31,6 +31,9 @@ void loop() {
   if (btn.hasClicks(2)) Serial.println("action 2 clicks");
   if (btn.hasClicks(3)) Serial.println("action 3 clicks");
   if (btn.hasClicks(5)) Serial.println("action 5 clicks");
+  
+  // прошло 5 секунд с момента отпускания кнопки
+  if (btn.timeout(5000)) Serial.println("timeout");
 
   // вывести количество кликов
   if (btn.hasClicks()) {

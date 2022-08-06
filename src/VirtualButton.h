@@ -20,6 +20,8 @@
     AlexGyver, alex@alexgyver.ru
     https://alexgyver.ru/
     MIT License
+    
+    v1.1 - добавлен механизм "таймаута"
 */
 
 #ifndef _VirtualButton_h
@@ -83,6 +85,9 @@ public:
     bool hasClicks(uint8_t num) { return (clicks == num && checkF(7)) ? 1 : 0; }    // имеются клики
     uint8_t hasClicks() { return checkF(6) ? clicks : 0; }                          // имеются клики
     
+    // с момента отпускания кнопки прошло указанное время, миллисекунд
+    bool timeout(uint16_t tout) { return ((uint16_t)(millis() & 0xFFFF) - _debTmr > tout && checkF(15)); }
+    
     uint8_t clicks = 0;                                                             // счётчик кликов
     
 private:
@@ -128,7 +133,7 @@ private:
                     }
                     _flags &= ~0b100010000;                         // clear 8 4                    
                     _debTmr = ms;                                   // сброс таймаута
-                    setF(10);                                       // кнопка отпущена
+                    _flags |= (1 << 10) | (1 << 15);                // set 10 15
                     if (checkF(13)) setF(12);                       // кнопка отпущена после step
                 }
             } else if (clicks && !readF(5)) {                       // есть клики
@@ -165,6 +170,6 @@ private:
     // 12 - btn released after step
     // 13 - step flag
     // 14 - deb flag
-    // 15 - RESERVED
+    // 15 - timeout
 };
 #endif
