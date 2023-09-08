@@ -5,7 +5,7 @@
 
 [![Foo](https://img.shields.io/badge/ПОДПИСАТЬСЯ-НА%20ОБНОВЛЕНИЯ-brightgreen.svg?style=social&logo=telegram&color=blue)](https://t.me/GyverLibs)
 
-|⚠️⚠️⚠️<br>**Библиотека архивирована! Используйте библиотеку [EncButton](https://github.com/GyverLibs/EncButton), она содержит в себе более новую и сильно улучшенную версию виртуальной кнопки**<br>⚠️⚠️⚠️|
+|⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️<br><br>**ВНИМАНИЕ, БИБЛИОТЕКА УСТАРЕЛА! ИСПОЛЬЗУЙ БИБЛИОТЕКУ [EncButton](https://github.com/GyverLibs/EncButton), ОНА ЛЕГЧЕ И ИМЕЕТ БОЛЬШЕ ВОЗМОЖНОСТЕЙ**<br><br>⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️|
 | --- |
 
 # VirtualButton
